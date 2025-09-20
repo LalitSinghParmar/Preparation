@@ -85,11 +85,12 @@ class MyLinkedList:
         
         # Deleting node from given index of list
         curr = self.head
-        prev = None
-        for _ in range(index):
-            prev = curr
+        # prev = None
+        for _ in range(index-1):
+            # prev = curr
             curr = curr.next
-        prev.next = curr.next 
+        # prev.next = curr.next
+        curr.next = curr.next.next 
         self.size -= 1
         return
     
