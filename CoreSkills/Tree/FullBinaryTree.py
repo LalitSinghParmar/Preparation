@@ -16,7 +16,7 @@ class FullBinaryTree:
     l = i+1 = (2**h)-1 = (n+1)/2
     '''
 
-    def isFullTree(self, node:Node) -> None:
+    def isFullTree(self, node:Node) -> bool:
         '''
         Checking if a tree is a full Tree or not. We'll consider a empty tree as full Binary tree
         '''
@@ -44,7 +44,7 @@ root.left = Node(2)
 root.left.left = Node(4)
 root.left.right = Node(5)
 root.left.right.left = Node(6)
-root.left.right.right = Node(7)
+root.left.right.left.right = Node(7)
 
 bt = FullBinaryTree()
 if bt.isFullTree(root):
